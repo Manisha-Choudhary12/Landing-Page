@@ -1,0 +1,126 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato&family=Ms+Madi&family=Roboto:ital,wght@0,300;1,100&display=swap');
+/*  1. Header content  */
+/*  2. Section1 content  */
+/*  3. Section2 content  */
+
+:root{
+    /* text color */
+    --bg-white:#fff;
+    --bg-green:#C7E9B0;
+    --bg-darkgreen:#7AA874;
+    
+    /* text color */
+    --text-white:#fff;
+    --text-green:#7AA874;
+
+    
+    /*  font family  */
+    --font-roboto:'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-roboto);
+    max-height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+/* 1. Header css starts  */
+header{
+    position: sticky;
+    top: 0px;
+    background-color: var(--bg-green);
+    color: var(--text-white);
+    align-items: center;
+    max-width: 100%;
+}
+.header-left-cont{
+    flex: 4;   
+    font-size: clamp(1.25rem, 1rem + 10vw, 1.55rem);
+    margin: 0px 60px;
+}
+.header-right-cont {
+    margin: 0px 60px;
+    flex: 5;   
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-right-cont a{
+    text-decoration: none;
+    color: var(--text-white);
+    padding: 0px 10px;
+}
+.header-right-cont a:hover{
+    background-color: var(--bg-darkgreen);
+    border-radius: 16px;
+    padding: 8px 8px;
+}
+.header-right-cont a:active{
+    color: var(--bg-darkgreen);
+}
+/* 1. Header css exit  */
+
+/* 2. Section 1 css starts*/
+.section-first-cont{
+    flex: 1;
+    justify-content: flex-start;
+    padding: 0px 50px;
+    color: var(--text-green);
+}
+.section-first-cont h4{
+    margin-bottom: 20px;
+    font-size: clamp(15px, 1rem + 10vw, 30px);
+}
+.section-first-cont button{
+    background-color: var(--bg-darkgreen);
+    border-radius: 16px;
+    padding: 8px 15px;
+    border: 1px solid #7AA874;
+    margin-bottom: 50px;
+    color: var(--text-white);
+}
+.section-first-cont button:active{
+    background-color: var(--bg-white);
+    color: black;
+    border: none;
+}
+.section-second-cont{
+    justify-content: flex-end;
+    margin:60px 60px;
+    gap: 10px;
+    max-width: 40%;
+    padding: 20px 50px;
+    box-shadow: 1px 2px 10px 5px black;
+    background-color: #7AA874;
+}
+/* 2. Section 1 css exit*/
+
+/* 3. Section 2 css starts*/
+.section2{
+    flex-direction: column;
+}
+.course-title{
+    text-align: center;
+    font-size: clamp(1.25rem, 1rem + 10vw, 2rem);
+}
+.card-container{
+    display: inline-flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.card{
+    box-shadow: 1px 2px 10px 5px #fff;
+    max-width: 350px;
+    padding: 10px 10px;
+    background-color: #F6F1F1;
+}
+/* 3. Section 2 css exit*/

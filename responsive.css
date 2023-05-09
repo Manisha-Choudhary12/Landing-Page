@@ -1,0 +1,56 @@
+/* media query for mobile */
+@media (min-width:319px) and (max-width:480px){
+    header{
+        max-width: 100%;
+    }
+    .header-left-cont{
+        margin-left: 0;
+    }
+    .header-right-cont{
+        margin-right: 0px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+    a{
+        font-size: 13px;
+    }
+    a:first-child{
+        
+        margin-left: -10px;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .section1 .section-second-cont{
+        flex-direction: column;
+        max-width:100%;
+        margin: 20px 0px;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 100%;
+        margin-right: 0px;
+    }
+}
+
+/* media query for ipad */
+@media (min-width:481px) and (max-width:1200px) {
+    p{
+        font-size: 13px;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .section1 .section-second-cont{
+        margin: 20px 60px;
+    }
+    .section1 .section-second-cont p{
+        margin-bottom: 0px;
+    }
+}
